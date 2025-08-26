@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho fixo no topo */
+.site-header {
+    background: #8C2641;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-block: 1rem;
+}
+
+/* Container global */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header usa container com flex */
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* Navegação (desktop) */
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    transition: color 0.22s ease, transform 0.12s ease;
+    padding: 0.15rem 0.2rem;
+    border-radius: 4px;
+}
+
+.nav a:hover {
+    color: #f0f0f0;
+    transform: translateY(-1px);
+}
+
+.nav a[aria-current="page"] {
+    color: #f0f0f0;
+    font-weight: 600;
+}
+
+.nav a.cta {
+    background: none;
+    color: #cccccc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.nav a.cta:hover {
+    color: #9a8c98;
+    background: rgba(154, 140, 152, 0.06);
+}
+
+/* Foco acessível */
+.nav a:focus-visible {
+    outline: 3px solid #9a8c98;
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+.nav a:focus {
+    outline: 3px solid rgba(154, 140, 152, 0.22);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/* Seção sobre */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 5rem 0;
+    /* só vertical, já tem padding lateral do container */
+}
+
+.sobre img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.sobre div {
+    max-width: 600px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre div {
+        max-width: 100%;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+}
