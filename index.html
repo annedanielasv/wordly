@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Wordly</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <a class="logo" href="#">Wordly</a>
             <nav class="nav" aria-label="Navegação principal" id="main-nav">
                 <a href="#">Sobre</a>
-                <a href="#" aria-current="page">Idiomas</a>
-                <a href="#">Método</a>
+                <a href="#" aria-current="page">Áreas de Estudo</a>
+                <a href="#">Metodologia</a>
                 <a href="#">Depoimentos</a>
                 <a href="#" class="cta">Contato</a>
             </nav>
         </div>
     </header>
-
+    
+    <!-- Conteúdo principal -->
     <main>
         <section class="sobre container">
             <img src="assets/image.webp" alt="Foto da professora Clara sorrindo">
             <div>
-                <h2>Sobre</h2>
+                <h1>Sobre</h1>
                 <p>Olá, eu sou a Clara, professora apaixonada por idiomas e por ajudar pessoas a alcançarem seus objetivos no
                     inglês e em outras línguas. Com uma metodologia prática e personalizada, minhas aulas são pensadas para
                     tornar o aprendizado dinâmico, divertido e realmente eficaz. Seja para viagens, estudos ou carreira, vou te
@@ -34,6 +37,34 @@
                 </p>
             </div>
         </section>
+
+        <section class="estudo container">
+            <h2>Áreas de Estudo</h2>
+            <div class="grid">
+                <div class="card"><span class="material-symbols-outlined">travel</span>Viagens</div>
+                <div class="card"><span class="material-symbols-outlined">business_center</span>Negócios</div>
+                <div class="card"><span class="material-symbols-outlined">chat</span>Conversação</div>
+                <div class="card"><span class="material-symbols-outlined">license</span>Certificação</div>
+            </div>
+        </section>
+
+        <section class="metodologia container">
+            <h2>Metodologia</h2>
+            <p>Minha metodologia é baseada em prática constante e personalização. Cada aluno aprende de forma diferente, por isso ajusto as aulas às suas necessidades e objetivos. O foco é a comunicação real e situações do cotidiano. </p>
+        </section>
+
+        <section class="depoimentos container">
+            <h2>Depoimentos</h2>
+            <blockquote>
+                <p>"Aprender inglês com a Clara mudou minha vida! Hoje consigo me comunicar no trabalho com muito mais segurança."</p>
+                <footer>- Ana Souza</footer>
+            </blockquote>
+            <blockquote>
+                <p>"As aulas são leves, divertidas e muito eficazes. Recomendo demais!"</p>
+                <footer>- João Santos</footer>
+            </blockquote>
+        </section>
+
     </main>
 </body>
 </html>
