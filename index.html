@@ -15,18 +15,18 @@
         <div class="container">
             <a class="logo" href="#">Wordly</a>
             <nav class="nav" aria-label="Navegação principal" id="main-nav">
-                <a href="#">Sobre</a>
-                <a href="#" aria-current="page">Áreas de Estudo</a>
-                <a href="#">Metodologia</a>
-                <a href="#">Depoimentos</a>
-                <a href="#" class="cta">Contato</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#estudo" aria-current="page">Áreas de Estudo</a>
+                <a href="#metodologia">Metodologia</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato" class="cta">Contato</a>
             </nav>
         </div>
     </header>
     
     <!-- Conteúdo principal -->
     <main>
-        <section class="sobre container">
+        <section id="sobre" class="sobre container">
             <img src="assets/image.webp" alt="Foto da professora Clara sorrindo">
             <div>
                 <h1>Sobre</h1>
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="estudo container">
+        <section id="estudo" class="estudo container">
             <h2>Áreas de Estudo</h2>
             <div class="grid">
                 <div class="card"><span class="material-symbols-outlined">travel</span>Viagens</div>
@@ -48,12 +48,12 @@
             </div>
         </section>
 
-        <section class="metodologia container">
+        <section id="metodologia" class="metodologia container">
             <h2>Metodologia</h2>
             <p>Minha metodologia é baseada em prática constante e personalização. Cada aluno aprende de forma diferente, por isso ajusto as aulas às suas necessidades e objetivos. O foco é a comunicação real e situações do cotidiano. </p>
         </section>
 
-        <section class="depoimentos container">
+        <section id="depoimentos" class="depoimentos container">
             <h2>Depoimentos</h2>
             <blockquote>
                 <p>"Aprender inglês com a Clara mudou minha vida! Hoje consigo me comunicar no trabalho com muito mais segurança."</p>
@@ -65,6 +65,21 @@
             </blockquote>
         </section>
 
+        <section id="contato" class="contato container">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Wordly - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
