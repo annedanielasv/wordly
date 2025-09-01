@@ -148,13 +148,14 @@ body {
 }
 
 .estudo .card {
+    font-size: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
     padding: 1.6rem;
     border: 1px solid var(--muted-border);
-    background: var(--card-bg);
+    /* background: var(--card-bg); */
     border-radius: 10px;
     cursor: pointer;
     min-height: 72px;
@@ -162,8 +163,7 @@ body {
 }
 
 .estudo .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
     background-color: #fff;
     border-color: #222;
 }
@@ -176,23 +176,18 @@ body {
 .metodologia {
     padding: 5rem 1rem;
     text-align: center;
-}
-
-.metodologia h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #222;
+    font-weight: 600;
 }
 
 .metodologia-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .metodologia-card {
-    background: var(--card-bg);
+    /* background: var(--card-bg); */
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--muted-border);
@@ -201,8 +196,9 @@ body {
 }
 
 .metodologia-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+    background-color: #fff;
+    border-color: #222;
 }
 
 .metodologia-card .material-symbols-outlined {
@@ -214,13 +210,12 @@ body {
 .metodologia-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    /* color: #222; */
 }
 
 .metodologia-card p {
     font-size: 1rem;
     font-weight: 400;
-    color: #444;
 }
 
 /* Avaliações */
