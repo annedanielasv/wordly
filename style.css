@@ -191,7 +191,7 @@ body {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--muted-border);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -232,7 +232,7 @@ body {
 
 .rating-summary .stars {
     font-size: 1.5rem;
-    color: gold;
+    color: #FFD700;
     margin-right: 0.3rem;
 }
 
@@ -257,6 +257,28 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Carrossel de Avaliações */
+.carousel {
+    overflow: hidden;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.carousel .review-card {
+    flex: 0 0 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0;
+}
+
 /* Contato */
 .contato {
     padding: 5rem 0;
@@ -269,7 +291,8 @@ body {
     max-width: 600px;
 }
 
-.contato input, .contato textarea {
+.contato input,
+.contato textarea {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 6px;
