@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho fixo no topo */
+/* Header */
 .site-header {
     background: #8C2641;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -36,7 +36,6 @@ body {
     padding-block: 1rem;
 }
 
-/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -44,7 +43,6 @@ body {
     padding: 0 1rem;
 }
 
-/* Header usa container com flex */
 .site-header .container {
     display: flex;
     justify-content: space-between;
@@ -58,7 +56,7 @@ body {
     text-decoration: none;
 }
 
-/* Navegação (desktop) */
+/* Navegação */
 .nav {
     display: flex;
     gap: 1.5rem;
@@ -90,7 +88,6 @@ body {
     background: none;
     color: #f0f0f0;
     padding: 0.25rem 0.5rem;
-    /* border-radius: 6px; */
     transition: background 0.18s ease, color 0.18s ease;
 }
 
@@ -99,13 +96,6 @@ body {
     outline: 3px solid #9a8c98;
     outline-offset: 3px;
     border-radius: 6px;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-    }
 }
 
 /* Sobre */
@@ -155,7 +145,6 @@ body {
     gap: 0.6rem;
     padding: 1.6rem;
     border: 1px solid var(--muted-border);
-    /* background: var(--card-bg); */
     border-radius: 10px;
     cursor: pointer;
     min-height: 72px;
@@ -187,7 +176,6 @@ body {
 }
 
 .metodologia-card {
-    /* background: var(--card-bg); */
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--muted-border);
@@ -210,7 +198,6 @@ body {
 .metodologia-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    /* color: #222; */
 }
 
 .metodologia-card p {
@@ -251,7 +238,7 @@ body {
     font-weight: 500;
 }
 
-/* Carrossel de Avaliações */
+/* Carrossel */
 .carousel {
     overflow: hidden;
     position: relative;
@@ -314,34 +301,17 @@ body {
     margin-top: 2rem;
 }
 
-/* Responsivo */
+/* Responsividade */
 @media (max-width: 768px) {
-    .sobre {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sobre div {
-        max-width: 100%;
-    }
-
-    .sobre img {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Menu de navegação em coluna */
     .nav {
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
-    /* Header menos espaçado */
-    header {
-        padding: 1rem;
+    .site-header {
+        padding: 0.8rem 1rem;
     }
 
     /* Seção sobre */
@@ -352,27 +322,25 @@ body {
     }
 
     .sobre img {
-        max-width: 80%;
+        max-width: 100%;
         margin-bottom: 1.5rem;
     }
 
     /* Grids mais flexíveis */
     .estudo .grid,
-    .metodologia .grid {
+    .metodologia-grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 1rem;
     }
 
-    /* Carrossel ocupa largura total */
+    /* Carrossel full */
     .carousel {
         max-width: 100%;
         padding: 0 1rem;
     }
 
-    /* Texto menor para caber melhor */
-    h1,
-    h2,
-    h3 {
+    /* Texto menor */
+    h1, h2, h3 {
         font-size: clamp(1.2rem, 5vw, 1.8rem);
     }
 
